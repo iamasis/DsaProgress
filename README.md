@@ -1,6 +1,6 @@
 # DsaProgress
 Here You can see my dsa progress.
 
-# KunalKushwaha
+About Kunal Kushwaha :-
 He is the best teacher in the world.
 
