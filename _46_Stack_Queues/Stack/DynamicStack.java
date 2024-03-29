@@ -1,4 +1,4 @@
-package DsaProgress._47_Stack_Queues.Stack;
+package DsaProgress._46_Stack_Queues.Stack;
 
 public class DynamicStack extends CustomStack{
     public DynamicStack(){

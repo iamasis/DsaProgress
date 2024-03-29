@@ -1,4 +1,4 @@
-package DsaProgress._48_SQ_Questns;
+package DsaProgress._47_SQ_Questns;
 
 import java.util.Stack;
 // PUSH EFFICIENTLY
@@ -42,11 +42,15 @@ public class _01_QueueUsingStack {
 }
 class Main{
     public static void main(String[] args) {
-        _01_QueueUsingStack queue = new _01_QueueUsingStack();
-        queue.insert(20);
-        queue.insert(120);
-        queue.insert(201);
-        queue.insert(210);
-        queue.display();
+//        _01_QueueUsingStack queue = new _01_QueueUsingStack();
+//        queue.insert(20);
+//        queue.insert(120);
+//        queue.insert(201);
+//        queue.insert(210);
+//        queue.display();
+        print("Ashish");
+    }
+    static void print(String message){
+        System.out.println("Hi how are you "+message);
     }
 }

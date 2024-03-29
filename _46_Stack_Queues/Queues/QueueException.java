@@ -1,4 +1,4 @@
-package DsaProgress._47_Stack_Queues.Queues;
+package DsaProgress._46_Stack_Queues.Queues;
 
 public class QueueException extends Exception{
     public QueueException(String message){
