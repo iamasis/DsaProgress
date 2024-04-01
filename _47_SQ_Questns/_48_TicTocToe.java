@@ -26,7 +26,16 @@ public class _48_TicTocToe {
                 if(gameOver){
                     System.out.println("Congratulations Player "+player+" have won the game");
                 }
-                player = (player == 'X') ? '0' : 'X';
+//                player = (player == 'X') ? '0' : 'X';
+
+
+                if(player == 'X'){
+                    player = '0';
+                }else{
+                    player = 'X';
+                }
+
+
             }else{
                 System.out.println("Invalid move try again");
             }
@@ -46,6 +55,7 @@ public class _48_TicTocToe {
                 return true;
             }
         }
+        // diagonal check
         if(board[0][0] == player && board[1][1] == player && board[2][2] == player){
             return true;
         }
