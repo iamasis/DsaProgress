@@ -1,4 +1,4 @@
-package DsaProgress._47_SQ_Questns;
+package DsaProgress._48_TicTacToe;
 
 import java.util.Scanner;
 
@@ -68,7 +68,7 @@ public class _48_TicTocToe {
     private static void print(char[][] board){
         for (int row = 0; row < board.length; row++){
             for (int col = 0; col < board[row].length; col++) {
-                System.out.print(board[row][col]+" |");
+                System.out.print(board[row][col]+" | ");
             }
             System.out.println();
         }

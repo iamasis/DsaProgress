@@ -1,4 +1,5 @@
 package DsaProgress._44_LinkedList;
+import javax.swing.*;
 
 public class LL {
     private Node head;
@@ -45,6 +46,21 @@ public class LL {
         temp.next = node;
         size++;
     }
+    // insert using rec
+    public void insertRec(int index, int value){
+        head = insertRec(index, value, head);
+    }
+    private Node insertRec(int index, int value, Node node){
+        if(index == 0){
+            Node temp = new Node(value, node);
+            size++;
+            return temp;
+        }
+        node.next = insertRec(index-1, value, node.next);
+        return node;
+    }
+
+
     public int deleteFirst(){
         int val = head.value;
         head = head.next;
@@ -116,4 +132,51 @@ public class LL {
             this.value = val;
         }
     }
+
+
+
+    // Questions
+    // Remove duplicates fromm linklist
+
+    public void removeDuplicates(){
+        Node node = head;
+
+        while(node.next != null){
+            if(node.value == node.next.value){
+                node.next = node.next.next;
+                size--;
+            }else{
+                node = node.next;
+            }
+        }
+        tail = node;
+        tail.next = null;
+    }
+
+    // question 2 mergeTwo LL
+    public LL mergeTwoLL(LL first, LL second) {
+        Node f = first.head;
+        Node s = second.head;
+
+        LL ans = new LL();
+        while (f != null && s != null) {
+            if (s.value > f.value) {
+                ans.insertLast(f.value);
+                f = f.next;
+            } else {
+                ans.insertLast(s.value);
+                s = s.next;
+            }
+        }
+        while(f != null){
+            ans.insertLast(f.value);
+            f = f.next;
+        }
+        while(s != null){
+            ans.insertLast(s.value);
+            s = s.next;
+        }
+        return ans;
+    }
 }
+
