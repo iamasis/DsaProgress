@@ -178,5 +178,25 @@ public class LL {
         }
         return ans;
     }
+
+    // bubble sort
+    public void bubbleSort(){
+
+    }
+    private void bubbleSort(int row, int col){
+        if(col < row){
+            Node first = get(col);
+            Node second = get(col+1);
+
+            if(first.value > second.value){
+
+                if(first == head){
+
+                }
+
+
+            }
+        }
+    }
 }
 
