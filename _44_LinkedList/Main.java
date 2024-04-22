@@ -72,23 +72,27 @@ public class Main {
 //        System.out.println();
 //        list.removeDuplicates();
 //        list.display();
-        LL list1 = new LL();
-        list1.insertLast(10);
-        list1.insertLast(20);
-        list1.insertLast(30);
-        list1.insertLast(40);
-        list1.insertLast(50);
-        list1.display();
-        System.out.println();
+//        LL list1 = new LL();
+//        list1.insertLast(10);
+//        list1.insertLast(20);
+//        list1.insertLast(30);
+//        list1.insertLast(40);
+//        list1.insertLast(50);
+//        list1.display();
+//        System.out.println();
         LL list2 = new LL();
         list2.insertLast(15);
-        list2.insertLast(25);
-        list2.insertLast(35);
         list2.insertLast(45);
         list2.insertLast(55);
+        list2.insertLast(35);
+
+        list2.insertLast(25);
+
         list2.display();
         System.out.println();
-        LL ans = list1.mergeTwoLL(list1, list2);
-        ans.display();
+//        LL ans = list1.mergeTwoLL(list1, list2);
+        list2.bubbleSort();
+        list2.display();
+
     }
 }
