@@ -36,21 +36,18 @@ public class _01_QueueUsingStack {
         }
         return peek;
     }
+
     public void display(){
         System.out.println(first);
     }
 }
 class Main{
     public static void main(String[] args) {
-//        _01_QueueUsingStack queue = new _01_QueueUsingStack();
-//        queue.insert(20);
-//        queue.insert(120);
-//        queue.insert(201);
-//        queue.insert(210);
-//        queue.display();
-        print("Ashish");
-    }
-    static void print(String message){
-        System.out.println("Hi how are you "+message);
+        _01_QueueUsingStack queue = new _01_QueueUsingStack();
+        queue.insert(20);
+        queue.insert(120);
+        queue.insert(201);
+        queue.insert(210);
+        queue.display();
     }
 }
