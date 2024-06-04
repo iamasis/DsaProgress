@@ -15,7 +15,7 @@ public class HashMapFinal<K, V> {
         }
     }
     int size = 0;
-    private float lf = 0.75f;
+    private final float lf = 0.75f;
     public HashMapFinal(){
         list = new ArrayList<>();
         for(int i =0 ; i < 10; i++){
